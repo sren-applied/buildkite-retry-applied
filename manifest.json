@@ -1,0 +1,16 @@
+ {
+    "name": "Buildkite Retry-All",
+    "version": "0.0.1",
+    "description": "Retry all failed buildkite tests on a page",
+    "permissions": [
+	  "*://buildkite.com/*"
+    ],
+    "background": {
+      "scripts": ["js/jquery.js"]
+    },
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+     },
+     "manifest_version": 2
+ }
