@@ -19,10 +19,10 @@ Here’s a small (~30 lines of code) Chrome extension that will display a button
 
 2. Click the extensions drop-down
 
-[extension-menu](extension-menu.png)
+![extension-menu](extension-menu.png)
 
 3. From the extensions menu, click the "Buildkite Retry-All" item
 
 4. In the dialog that appears, click the "Retry failed Buildkite tests" button
 
-[retry-button](retry-button.png)
+![retry-button](retry-button.png)
