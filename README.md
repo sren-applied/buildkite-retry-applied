@@ -5,13 +5,15 @@ DISCLAIMER please retry responsibly and only use if you know that your tests are
 
 ## Installation
 
-1. Navigate to, chrome://extensions/
+1. Clone this repo.
 
-2. Enable "Developer mode"
+2. Navigate to, chrome://extensions/
 
-3. Click "Load unpacked"
+3. Enable "Developer mode"
 
-4. Select this repo and click "Open"
+4. Click "Load unpacked"
+
+5. Select this repo and click "Open"
 
 ## Usage
 
