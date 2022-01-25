@@ -1,7 +1,7 @@
 # buildkite retry
 
-Tired of retrying all of your buildkite tests individually?
-Here’s a Chrome extension that will display a button to retry all failed tests on your current buildkite page. DISCLAIMER please use responsibly and only use if you know that your tests are flaking due to reasons unrelated to your changes :slightly_smiling_face:
+Here’s a Chrome extension with some useful Buildkite workflow shortcuts, currently including a button to retry all failed tests on your current buildkite page and a way to quickly report test-infra issues.
+DISCLAIMER please retry responsibly and only use if you know that your tests are flaking due to reasons unrelated to your changes :slightly_smiling_face:
 
 ## Installation
 
@@ -15,14 +15,15 @@ Here’s a Chrome extension that will display a button to retry all failed tests
 
 ## Usage
 
+### Retry failed builds
 1. Navigate to webpage of the build (https://buildkite.com/$BUILDKITE_ORGANIZATION_SLUG/$BUILDKITE_PIPELINE_SLUG/builds/$BUILDKITE_BUILD_NUMBER)
 
-2. Click the extensions drop-down
+2. If enabled correctly, the extension will add a "Retry Failed" button to the page.
+![retry-failed](retry-failed.png)
 
-![extension-menu](extension-menu.png)
+### Copy issues to eng-test-infra
+1. Select the text of the failing test that you'd like to include in your error report.
 
-3. From the extensions menu, click the "Buildkite Retry-All" item
+2. Right-click and then select "Copy report with error..." from the dropdown.
 
-4. In the dialog that appears, click the "Retry failed Buildkite tests" button
-
-![retry-button](retry-button.png)
+![copy-report](copy-report.png)
