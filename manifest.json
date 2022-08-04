@@ -9,7 +9,7 @@
     "declarativeContent"
   ],
   "icons": {
-    "16": "applied_logo_16.png"
+    "16": "clipboard-red.png"
   },
   "content_scripts": [
     {
