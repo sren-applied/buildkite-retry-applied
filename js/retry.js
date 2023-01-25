@@ -1,17 +1,23 @@
 function openFailed() {
-    var failed = document.getElementsByClassName("build-pipeline-state-failed");
-    for (var i = 0; i < failed.length; i++) {
-      failed[i].click();
-    }
-    var retries = Array.from(document.querySelectorAll('a')).filter(el => el.innerText === 'Retry');
+    labelsToCheck = ["build-pipeline-state-failed", "build-pipeline-state-canceled"];
+    var retryCount = 0;
+    labelsToCheck.forEach((label) => {
+      var failed = document.getElementsByClassName(label);
+      for (var i = 0; i < failed.length; i++) {
+        failed[i].click();
+      }
+      var retries = Array.from(document.querySelectorAll('a')).filter(el => el.innerText === 'Retry');
 
-    if (retries.length === 0) {
+      for (var i = 0; i < retries.length; i++) {
+        retries[i].click();
+        retryCount++;
+      }
+      console.log("retried " + retries.length + " tests");
+    });
+    
+    if (retryCount === 0) {
       alert("Nothing to retry, maybe due to the job being canceled.");
     }
-    for (var i = 0; i < retries.length; i++) {
-      retries[i].click();
-    }
-    console.log("retried " + retries.length + " tests");
     setTimeout(function(){ window.scrollTo({ top: 0 }); }, 1000);
 }
 
