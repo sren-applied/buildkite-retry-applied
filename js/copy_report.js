@@ -27,7 +27,7 @@ text += link + "<br/><br/>";
 var name = header.querySelectorAll('[data-testid="JobName"]')[0].innerText;
 text += "<b>Name of test</b><br/>";
 text += name + "<br/><br/>";
-var machineName = header.querySelectorAll('.fa-cube')[0].parentNode.children[1].innerText;
+var machineName = header.querySelectorAll('a[href*="agents/"]')?.[0]?.innerText;
 text += "<b>Name of machine</b><br/>";
 text += machineName + "<br/><br/>";
 text += "<b>Error/issue with test</b><br/>";
